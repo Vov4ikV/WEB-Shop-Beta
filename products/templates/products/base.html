@@ -38,7 +38,7 @@
       {% if total_items > 0 %}
       <p class="text-right">
       Корзина:
-      <a href="{% url "cart:cart-detail"%}">
+      <a href="{% url 'cart:cart-detail'%}">
         {{ total_items }} ед. -
         {{ cart.get_total_price }} руб.
       </a>
