@@ -109,3 +109,6 @@ def cart_detail(request):
             'quantity': item['quantity'],
             'override': True})
     return render(request, 'cart/cart-detail.html', {'cart': cart})
+
+class ProductCartUser:
+    pass
