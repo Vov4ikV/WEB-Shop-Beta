@@ -35,6 +35,12 @@ class CategoryListView(ListView):
     template_name = 'products/category-list.html'
     context_object_name = 'categories'
 
+    def get_context_data(self, **kwargs):
+        context =  super().get_context_data(**kwargs)
+        subcategories = SubCategory.objects.all()
+        context['subcategories'] = subcategories
+        return context
+
    
 
 class SubCategoryCreateView(CreateView):
@@ -44,17 +50,6 @@ class SubCategoryCreateView(CreateView):
     template_name = 'products/subcategory-form.html'
     success_url = reverse_lazy('products:category-list')
 
-
-
-def CategoryDetail(request, category_slug):
-    category = get_object_or_404(Category, slug=category_slug)
-    subcategory = SubCategory.objects.filter(category=category)
-    context = {
-        'category': category,
-        'subcategory': subcategory
-    }
-
-    return render(request, 'products/category-detail.html', context=context)
 
 
 

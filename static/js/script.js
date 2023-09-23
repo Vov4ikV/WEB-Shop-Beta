@@ -1,4 +1,3 @@
-    
  
   function updateSubcategories() {
     // Получаем выбранную категорию

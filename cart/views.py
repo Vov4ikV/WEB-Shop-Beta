@@ -80,7 +80,8 @@ class Cart:
 @require_POST
 def cart_add(request, product_id):
     if request.user.id:
-        return remove_from_db(request, product_id)
+        return add_cart_db(request, product_id)
+
     cart = Cart(request)
     product = get_object_or_404(Products, id=product_id)
     form = CartAddProductForm(request.POST)
@@ -91,6 +92,13 @@ def cart_add(request, product_id):
         cart.add(product=product, 
                  quantity=cd['quantity'],
                  override_quantity=cd['override'])
+    
+    else:
+        
+        cart.add(product=product, 
+                 quantity=1,
+                 override_quantity=False)
+    
     
     return redirect('cart:cart-detail')
 
@@ -115,7 +123,7 @@ def cart_detail(request):
         cart = Cart(request)
 
     for item in cart:
-        item['update_quantity_form'] = CartAddProductForm(intitial={
+        item['update_quantity_form'] = CartAddProductForm(initial={
             'quantity': item['quantity'],
             'override': True})
     return render(request, 'cart/cart-detail.html', {'cart':cart})
