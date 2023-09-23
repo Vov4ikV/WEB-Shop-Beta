@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "PTRootUIWeb";
+  src: url("https://rstatic.citilink.ru/react-ssr-app-catalog/561101e3/_next/static/fonts/94617d3fe69bfca0e9265be474bda480.eot");
+  src: local("PTRootUIWebBold"), url("https://rstatic.citilink.ru/react-ssr-app-catalog/561101e3/_next/static/fonts/94617d3fe69bfca0e9265be474bda480.eot?#iefix") format("embedded-opentype"), url("https://rstatic.citilink.ru/react-ssr-app-catalog/561101e3/_next/static/fonts/605d5b6a7bdf8b7ddc7541da48544208.woff2") format("woff2"), url("https://rstatic.citilink.ru/react-ssr-app-catalog/561101e3/_next/static/fonts/b64e0b606e90a87d747a4f0720f6eb18.woff") format("woff"), url("https://rstatic.citilink.ru/react-ssr-app-catalog/561101e3/_next/static/fonts/f52fcf2cdd7d55b8bef0610b3339956f.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PTRootUIWeb";
+  src: url("https://rstatic.citilink.ru/react-ssr-app-catalog/561101e3/_next/static/fonts/318615d55485a1d243a2c76b456109f7.eot");
+  src: local("PTRootUIWebBold"), url("https://rstatic.citilink.ru/react-ssr-app-catalog/561101e3/_next/static/fonts/318615d55485a1d243a2c76b456109f7.eot?#iefix") format("embedded-opentype"), url("https://rstatic.citilink.ru/react-ssr-app-catalog/561101e3/_next/static/fonts/8ceb490d9f1d88c89e1db00c5ba84588.woff2") format("woff2"), url("https://rstatic.citilink.ru/react-ssr-app-catalog/561101e3/_next/static/fonts/87a51940f7dba306010870c4bdd97c3d.woff") format("woff"), url("https://rstatic.citilink.ru/react-ssr-app-catalog/561101e3/_next/static/fonts/4a2a3e56d0413fd5455f37952b3611a4.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PTRootUIWeb";
+  src: url("https://rstatic.citilink.ru/react-ssr-app-catalog/561101e3/_next/static/fonts/3affc38f86053f1df18fe533e86e3a72.eot");
+  src: local("PTRootUIWebBold"), url("https://rstatic.citilink.ru/react-ssr-app-catalog/561101e3/_next/static/fonts/3affc38f86053f1df18fe533e86e3a72.eot?#iefix") format("embedded-opentype"), url("https://rstatic.citilink.ru/react-ssr-app-catalog/561101e3/_next/static/fonts/3de3ace4adcda1b46af225f3a9ec9b98.woff2") format("woff2"), url("https://rstatic.citilink.ru/react-ssr-app-catalog/561101e3/_next/static/fonts/724d6c4f5bd4b8633229f1707b0ba571.woff") format("woff"), url("https://rstatic.citilink.ru/react-ssr-app-catalog/561101e3/_next/static/fonts/bf1b85ffd582bdc18226149bdb383ae9.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: PTRootUIWeb, sans-serif;
+  color: #151528;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 15px 0 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.header__nav-main, .header__nav-cart, .header__nav-user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.link {
+  line-height: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition-property: color, font-weight, border-bottom;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  color: #151528;
+}
+.link:hover {
+  color: #FE7200;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.cart-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(30, 31, 33, 0.12) 0px 5px 25px;
+}/*# sourceMappingURL=main.css.map */
