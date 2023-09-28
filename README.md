@@ -9,3 +9,5 @@ pip install pillow
 python3 manage.py makemigrations
 python3 manage.py migrate
 http://127.0.0.1:8001/ 
+
+
