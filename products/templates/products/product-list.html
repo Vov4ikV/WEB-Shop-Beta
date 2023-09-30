@@ -3,8 +3,6 @@
 {% block content %}
 {% load thumbnail %}
 
-<link rel="stylesheet" href="{% static 'css/products.css'%}" type="text/css">
-
 <div class="products">
     {% for prod in products %}
       <div class="product">
@@ -23,7 +21,7 @@
           <form action="{% url 'cart:cart-add' prod.id %}" method="post">
             {{ cart_product_form }}
             {% csrf_token %}
-            <input type="submit" value="В корзину"> 
+            <input class="product__btn" type="submit" value="В корзину"> 
           </form>
         </p>
       </div>

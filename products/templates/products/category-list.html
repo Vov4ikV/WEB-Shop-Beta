@@ -1,18 +1,16 @@
 {% extends 'products/base.html' %}
 {% block content %}
-<ul>
-    {% for cat in categories %}
-        <li> {{cat.name}} </li>
-    <ul>
-        {% for subcategory in cat.categories.all %}
-            <li>{{ subcategory.name}}</li>
-            
+
+{% for c in category_list  %}
+<div class="dropdown">
+    <button class="dropbtn">{{ c.name }}</button>
+    <div class="dropdown__content">
+        {% for subcategory in c.categories.all %}
+            <a class="dropdown__content__link" href="{{ subcategory.get_absolute_url }}">{{ subcategory.name }}</a>
         {% endfor %}
-    </ul>
-    <br>
-    {% endfor %}
-  
-</ul>
+    </div>
+</div>
+{% endfor %}
 
 
 

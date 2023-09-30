@@ -1,0 +1,50 @@
+
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: PTRootUIWeb, sans-serif;
+    color: $text;
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    line-height: inherit;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition-property: color,font-weight,border-bottom;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+    color: $text;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.content {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.cart-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(30 31 33 / 12%) 0px 5px 25px;
+}
+
+a {
+    text-decoration: none;
+    color: $primary;
+    
+    &:hover {
+        color: $text;
+    }
+}

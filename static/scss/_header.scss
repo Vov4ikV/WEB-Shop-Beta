@@ -1,0 +1,17 @@
+.header {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px 0 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    &__nav {
+        &-main, &-cart, &-user {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}

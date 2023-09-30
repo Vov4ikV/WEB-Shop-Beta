@@ -19,7 +19,7 @@ def index(request):
         'category_list': category,
     }
 
-    return render(request, 'products/index.html', context=context)
+    return render(request, 'products/category-list.html', context=context)
    
 
 class CategoryCreateView(CreateView):
