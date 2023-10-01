@@ -24,20 +24,4 @@
         margin-top: 5px;
     }
 
-    select {
-        border: 1px solid $border;
-        padding: 4px 16px;
-        font-size: 16px;
-        border-radius: 6px;
-    }
-
-    &__btn {
-        background-color: $primary;
-        border-radius: 6px;
-        color: white;
-        padding: 6px 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-    }
 }

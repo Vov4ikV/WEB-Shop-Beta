@@ -1,5 +1,12 @@
-<form action="{% url 'products:subcategory-form' %}" method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Добавить подкатегорию</button>
-</form>
+{% extends "products/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="wrapper__center">
+    <form class="category-form" action="{% url 'products:subcategory-form' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Добавить подкатегорию</button>
+    </form>
+</div>
+{% endblock content %}

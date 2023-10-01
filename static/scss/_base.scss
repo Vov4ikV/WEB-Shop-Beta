@@ -48,3 +48,50 @@ a {
         color: $text;
     }
 }
+
+.btn, input[type="submit"], button[type="submit"] {
+    background-color: $primary;
+    border-radius: 6px;
+    color: white;
+    padding: 6px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $secondary;
+    }
+}
+select, input[type="text"], input[type="email"], textarea, input[type="password"] {
+    border: 1px solid $border;
+    padding: 4px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.category-form {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgb(30 31 33 / 12%) 0px 5px 25px;
+    padding: 16px;
+    border-radius: 6px;
+
+    p {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            max-width: 100%;
+        }
+    }
+}
+
+.wrapper__center {
+    display: flex;
+    justify-content: center;
+}
